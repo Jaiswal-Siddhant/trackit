@@ -1,21 +1,34 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useEffect } from 'react';
+import { SafeAreaView, Text, TouchableOpacity } from 'react-native';
+import { Provider, useDispatch, useSelector } from 'react-redux';
+import MainNavigation from './src/MainNavigation';
+import { fetchUserFromApi, getUserFromStorage } from './src/redux/Actions';
+import { store } from './src/redux/store';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+const fetchAndSave = async () => {
+	const response = await fetch(
+		'https://jsonplaceholder.typicode.com/users/1'
+	);
+	const data = await response.json();
+	return data;
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+// const Component = () => {
+// 	const dispatch = useDispatch();
+// 	const val = useSelector((state) => state);
+
+// 	useEffect(() => {}, []);
+// 	return (
+
+// 	);
+// };
+
+const App = () => {
+	return (
+		<Provider store={store}>
+			<MainNavigation />
+		</Provider>
+	);
+};
+
+export default App;

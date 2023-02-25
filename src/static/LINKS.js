@@ -1,0 +1,3 @@
+exports.DUMMY_DATA_API = 'https://jsonplaceholder.typicode.com/users/1';
+exports.PROFILE_URI =
+	'https://s3-alpha-sig.figma.com/img/d4eb/84f9/7fc6da95a6e2c31bc287509617d66d50?Expires=1678060800&Signature=nam3FcM6GwlzMzM0cCNhtJvMo2Zlo4jVthC-WhLWE71KyN3eMDtkKvEpJ2-07amD1800f9iikssXvy0xMxNiWdBPooL9F5w0fT21F2bKSRuWqBbyaSHUly~AiMmYRWFAuHwPDjaeFL8Suh4~LfKz0tjbHJRrxCu1TCwCMgUqMyUA7bsfFizUiCv6Pc4SyQeUsrbum9MO4QTIka5jDsy50lSfxoEEV8kS99SLpxplUNSkDJz6w-GOt2V6X37agYAZ1TAtjX0NBe7plOcI8NQXgO2VlEhcO1Xig3irVjcmZhRJN2g179ckvu~ZBijSBqtZ2681DHJjU~5Y9AD7V-QNJA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4';
