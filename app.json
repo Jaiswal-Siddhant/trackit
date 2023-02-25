@@ -5,6 +5,12 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "cde7c66e-9902-4b73-8d66-2bd302faa351"
+      }
+    },
+    "owner": "jaiswal-siddhant"
   }
 }
